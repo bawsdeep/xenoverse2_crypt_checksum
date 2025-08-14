@@ -4,20 +4,6 @@ A Python CLI tool for decrypting, editing, re-encrypting, and recalculating chec
 
 ---
 
-## ⚠️ Warning
-
-Always backup your save before using this tool. An incorrect encryption or checksum will cause the game to reject the save.
-
----
-
-## 🧠 How It Works
-
-The tool automatically detects whether the save file is encrypted or decrypted.  
-It uses AES-CTR encryption with a static header key/IV for the save header and an internal key/IV stored inside the save for the main data.  
-All internal checksums (1–8) are recalculated to ensure the save remains valid.
-
----
-
 ## 🚀 Usage
 
 Run the tool from the command line with the path to your save file:
