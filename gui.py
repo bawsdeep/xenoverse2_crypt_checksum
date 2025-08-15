@@ -30,7 +30,7 @@ class Xeno2GUI(QWidget):
         self.select_button.clicked.connect(self.select_file)
         layout.addWidget(self.select_button)
 
-        self.process_button = QPushButton("Load a Save first")
+        self.process_button = QPushButton("Decrypt/Encrypt")
         self.process_button.clicked.connect(self.process_file)
         self.process_button.setEnabled(False)
         layout.addWidget(self.process_button)
