@@ -16,16 +16,14 @@ python xv2tool.py /path/to/savefile
     If the save is decrypted, the tool recalculates checksums and outputs an encrypted file with .enc extension.
 
 The script automatically detects the save format and handles decryption or encryption accordingly.
-📜 Credits
+## 📜 Credits & Acknowledgements
 
-    Zhaxxy – First PS4 save decryption for Xenoblade Chronicles 2.
+Big thanks to the following people and projects whose work made this tool possible:
 
-    ezwizard – Contributions to PS4 save decryption.
+- **[Zhaxxy](https://github.com/Zhaxxy/eZwizard3-bot)** – First PS4 save decryption work for Xenoverse 2, providing a free and easy method for PS4 save decryption.  
+- **ezwizard** – Free and easy method for PS4 save decryption.  
+- **[hzhreal/HTOS](https://github.com/hzhreal/HTOS)** – Free and easy method for PS4 save decryption and reference implementation.  
+- **[alfizari](https://github.com/alfizari)** – Python porting and patching work.  
+- **[mineminemine](https://github.com/mineminemine)** – Checksum logic from the Switch version of the tool.  
+- **gabrieluto** – Extensive research on Xenoverse 2 PS4 saves and detailed spreadsheet of offsets.
 
-    hzhreal/HTOS – HTOS reference implementation.
-
-    alfizari – Python port and patching.
-
-    mineminemine – Checksum logic from Switch version.
-
-    gabrieluto – XV2 PS4 save research & spreadsheet of offsets.
