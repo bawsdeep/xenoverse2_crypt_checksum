@@ -15,15 +15,27 @@ jobs:
 
       - name: Clean previous builds
         run: |
-          Remove-Item -Recurse -Force dist, build, __pycache__
+          Remove-Item -Recurse -Force dist, build, __pycache__ -ErrorAction SilentlyContinue
         shell: pwsh
 
-      - name: Create Windows Executable (64-bit)
-        uses: sayyid5416/pyinstaller@v1
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          python_ver: '3.12'
-          spec: 'build.spec'
-          upload_exe_with_name: 'x2tool_WIN64'
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools wheel pyqt6 pycryptodome pyinstaller
+
+      - name: Build Windows Executable
+        run: |
+          pyinstaller build.spec
+          
+      - name: Upload Windows Executable
+        uses: actions/upload-artifact@v4
+        with:
+          name: xv2tool_WIN64
+          path: dist/
 
   build-linux-x86_64:
     runs-on: ubuntu-latest
@@ -35,9 +47,21 @@ jobs:
         run: |
           rm -rf dist build __pycache__
 
-      - name: Create Linux Executable
-        uses: sayyid5416/pyinstaller@v1
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          python_ver: '3.12'
-          spec: 'build.spec'
-          upload_exe_with_name: 'xv2tool_LINUX_x86_64'
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools wheel pyqt6 pycryptodome pyinstaller
+
+      - name: Build Linux Executable
+        run: |
+          pyinstaller build.spec
+
+      - name: Upload Linux Executable
+        uses: actions/upload-artifact@v4
+        with:
+          name: xv2tool_LINUX_x86_64
+          path: dist/
