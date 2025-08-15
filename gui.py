@@ -85,7 +85,7 @@ class Xeno2GUI(QWidget):
             except Exception:
                 self.is_decrypted = False
 
-            self.process_button.setText("Load a Save")
+            self.process_button.setText("Decrypt/Encrypt")
 
     def process_file(self):
         if not self.file_path:
