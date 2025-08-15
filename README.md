@@ -23,7 +23,7 @@ The script automatically detects the save format and handles decryption or encry
 Big thanks to the following people and projects whose work made this tool possible:
 
 - **[Zhaxxy](https://github.com/Zhaxxy/xenoverse2_ps4_decrypt)** – First PS4 save decryption for Xenoverse 2 and creator of ezwizard.  
-- **[ezwizard](https://github.com/Zhaxxy/eZwizard3-bot)** – Free PS4 save decryption tool by Zhaxxy.
+- **[Zaxxy/ezwizard](https://github.com/Zhaxxy/eZwizard3-bot)** – Free PS4 save decryption tool by Zhaxxy.
 - **[hzhreal/HTOS](https://github.com/hzhreal/HTOS)** – Free PS4 save decryption tool.
 - **[alfizari](https://github.com/alfizari)** – Python porting and patching work.  
 - **[mineminemine](https://github.com/mineminemine)** – Checksum logic from the Switch version of the tool.  
