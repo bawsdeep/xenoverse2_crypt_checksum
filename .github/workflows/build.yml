@@ -18,7 +18,7 @@ jobs:
         with:
           python_ver: '3.12'
           spec: 'build.spec'
-          upload_exe_with_name: 'Dark_Souls_3_Save_Editor_WIN64'
+          upload_exe_with_name: 'x2tool_WIN64'
 
   build-linux-x86_64:
     runs-on: ubuntu-latest
@@ -31,4 +31,4 @@ jobs:
         with:
           python_ver: '3.12'
           spec: 'build.spec'
-          upload_exe_with_name: 'Dark_Souls_3_Save_Editor_LINUX_x86_64'
+          upload_exe_with_name: 'xv2tool_LINUX_x86_64'
