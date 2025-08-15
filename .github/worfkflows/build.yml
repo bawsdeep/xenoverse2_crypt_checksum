@@ -1,0 +1,34 @@
+name: BUILDBOT
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-windows-64bit:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Create Windows Executable (64-bit)
+        uses: sayyid5416/pyinstaller@v1
+        with:
+          python_ver: '3.12'
+          spec: 'src/build.spec'
+          upload_exe_with_name: 'Dark_Souls_3_Save_Editor_WIN64'
+
+  build-linux-x86_64:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Create Linux Executable
+        uses: sayyid5416/pyinstaller@v1
+        with:
+          python_ver: '3.12'
+          spec: 'src/build.spec'
+          upload_exe_with_name: 'Dark_Souls_3_Save_Editor_LINUX_x86_64'
