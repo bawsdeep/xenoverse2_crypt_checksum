@@ -27,6 +27,6 @@ Big thanks to the following people and projects whose work made this tool possib
 - **[hzhreal/HTOS](https://github.com/hzhreal/HTOS)** – Free PS4 save decryption tool.
 - **[alfizari](https://github.com/alfizari)** – Python porting and patching work.  
 - **[mineminemine](https://github.com/mineminemine)** – Checksum logic from the Switch version of the tool.  
-- **gabrieluto** – Extensive research on Xenoverse 2 PS4 saves and detailed spreadsheet of offsets.
+- **[gabrieluto](https://github.com/gabrieluto)** – Extensive research on Xenoverse 2 PS4 saves and detailed spreadsheet of offsets.
 
 
