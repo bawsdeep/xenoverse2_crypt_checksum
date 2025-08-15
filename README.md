@@ -16,6 +16,7 @@ python xv2tool.py /path/to/savefile
     If the save is decrypted, the tool recalculates checksums and outputs an encrypted file with .enc extension.
 
 The script automatically detects the save format and handles decryption or encryption accordingly.
+```
 
 ## 📜 Credits & Acknowledgements
 
