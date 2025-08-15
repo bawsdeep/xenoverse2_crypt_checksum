@@ -1,6 +1,6 @@
 # XV2 Save Checksum & Crypto Tool
 
-A Python CLI tool for decrypting, editing, re-encrypting, and recalculating checksums for Xenoblade Chronicles 2 and Dragon Ball Xenoverse 2 PS4 save files.
+A Python CLI tool for decrypting, editing, re-encrypting, and recalculating checksums for Dragon Ball Xenoverse 2 PS4 save files.
 
 ---
 
